@@ -3,8 +3,9 @@
  */
 public class Lesson20 {
     public static void main(String[] args) {
-        Human1 human1 = new Human1();
-
+        Human1 human1 = new Human1("Bob", 40);
+        //human1.toString();
+        System.out.println(human1.toString());
     }
 }
 
@@ -18,6 +19,10 @@ class Human1 {
         this.name = "Имя по умолчанию";
         this.age = 0;
         //System.out.println("Привет из первого конструктора!");
+    }
+
+    public String toString() {
+        return name + ", " + age;
     }
 
     public Human1 (String name) {
